@@ -26,7 +26,7 @@
 				<div class="fields__block">
 					<button class="fields__btn fields__btn_sort">
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M3 18H9V16H3V18ZM3 6V8H21V6H3ZM3 13H15V11H3V13Z" fill="white"/>
+						<path d="M3 18H9V16H3V18ZM3 6V8H21V6H3ZM3 13H15V11H3V13Z" fill="currentColor"/>
 					</svg>
 					<span class="fields__text">По рейтингу</span>
 				</button>
@@ -44,7 +44,7 @@
 				<div class="fields__block">
 					<button class="fields__btn fields__btn_filter">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M4.24999 5.61C6.26999 8.2 9.99999 13 9.99999 13V19C9.99999 19.55 10.45 20 11 20H13C13.55 20 14 19.55 14 19V13C14 13 17.72 8.2 19.74 5.61C20.25 4.95 19.78 4 18.95 4H5.03999C4.20999 4 3.73999 4.95 4.24999 5.61Z" fill="white"/>
+							<path d="M4.24999 5.61C6.26999 8.2 9.99999 13 9.99999 13V19C9.99999 19.55 10.45 20 11 20H13C13.55 20 14 19.55 14 19V13C14 13 17.72 8.2 19.74 5.61C20.25 4.95 19.78 4 18.95 4H5.03999C4.20999 4 3.73999 4.95 4.24999 5.61Z" fill="currentColor"/>
 						</svg>
 						<span class="fields__text">Фильтр</span>
 					</button>
@@ -115,7 +115,7 @@
 				</li>
 			</ul>
 		</div>
-		<footer class="footer">
+		<footer class="footer library__footer">
 			<button class="footer__btn library__add-btn" area-label="Добавить книгу">
 				<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<circle cx="22" cy="22" r="22" fill="currentColor"/>
@@ -126,18 +126,17 @@
 		</footer>
 	</section>
 
-
 	<section class="book hidden">
 		<header class="header book__header">
 			<div class="container header__container">
-				<button class="header__btn header__btn_back">Назад</button>
-				<button class="header__btn header__btn_delete">Удалить</button>
+				<button class="header__btn header__btn_back"></button>
+				<button class="header__btn header__btn_delete"></button>
 			</div>
 		</header>
 		<div class="container book__container">
 			<div class="book__wrapper">
 				<img class="book__image" src="img/book_cover_1.jpg" alt="Обложка книги">
-				<button class="book__label">Хочу прочитать</button>
+				<button class="book__label book__label_img">Хочу прочитать</button>
 			</div>
 		</div>
 		<div class="book__content">
@@ -153,11 +152,10 @@
 			<h3 class="book__subtitle">Описание</h3>
 			<p class="book__description">Главный герой — Уинстон Смит — живёт в Лондоне, работает в Министерстве правды и является членом внешней партии. Он не разделяет партийные лозунги и идеологию и в глубине души сильно сомневается в партии, окружающей действительности и вообще во всём том, в чём только можно сомневаться. Чтобы «выпустить пар» и не совершить какой-нибудь безрассудный поступок, ведёт дневник, в котором старается излагать все свои сомнения. На людях же притворяется приверженцем партийных идей. Однако опасается, что девушка Джулия, работающая в том же министерстве, шпионит за ним и хочет разоблачить его. В то же время полагает, что высокопоставленный сотрудник их министерства, член внутренней партии некий О’Брайен также не разделяет мнения партии и является подпольным революционером.</p>
 		</div>
-		<footer class="footer">
+		<footer class="footer book__footer">
 			<button class="footer__btn book__label">Хочу прочитать</button>
 		</footer>
 	</section>
-
 
 	<section class="add hidden">
 		<h2 class="visually-hidden">Добавить книгу</h2>
@@ -245,7 +243,20 @@
 		
 	</section>
 
-
+	<div class="search">
+    <div class="container">
+      <form class="search__form">
+        <label>
+          <input class="search__input" type="search">
+        </label>
+        <button class="search__button">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="currentColor"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
 	
 </body>
 </html>
