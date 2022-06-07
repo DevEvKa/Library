@@ -1,4 +1,14 @@
 .add {
+
+	&__header {
+		@include laptop {
+			margin-bottom: 10px;
+		}
+		@include desktop {
+			margin-bottom: 0;
+		}
+	}
+
   &__form {
     padding: 14px 0;
   }
@@ -7,6 +17,9 @@
     @media (max-width: 375px) {
       padding: 0 12px;
     }
+		@include tablet {
+			max-width: 698px;
+		}
   }
 
   &__title {
@@ -14,6 +27,10 @@
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 8px;
+		@include laptop {
+			font-size: 40px;
+			line-height: 49px;
+		}
   }
 
   &__subtitle {
@@ -21,6 +38,7 @@
     font-size: 12px;
     line-height: 100%;
     margin-bottom: 15px;
+
   }
 
 
@@ -29,6 +47,12 @@
     font-size: 14px;
     line-height: 100%;
     margin-bottom: 30px;
+		@include tablet {
+			margin-bottom: 50px;
+		}
+		@include laptop {
+			font-size: 18px;
+		}
   }
 
   &__label {
